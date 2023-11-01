@@ -141,8 +141,8 @@ main {
     z-index: 100;
 
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 50px;
+    left: 225px;
 
     background-image: url(/imgs/layout2.png);
     background-size: contain;
@@ -198,5 +198,9 @@ main {
     .modal {
         width: 300px;
         height: 500px;
+
+        position: fixed;
+        top: 250px;
+        left: 30px;
     }
 }
