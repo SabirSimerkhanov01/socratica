@@ -4,4 +4,4 @@
 
 # Техническое задание
 
-https://vercel.com/new/success?developer-id=&external-id=&redirect-url=&branch=main&deploymentUrl=socratica-hgn28m496-sabirsimerkhanov01.vercel.app&projectName=socratica&s=https%3A%2F%2Fgithub.com%2FSabirSimerkhanov01%2Fsocratica&gitOrgLimit=&hasTrialAvailable=1&totalProjects=1
+https://socratica.vercel.app/
