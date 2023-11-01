@@ -43,7 +43,6 @@ img, svg, video {
 
 body {
     margin: 0 140px;
-
     font-family: 'Inter', sans-serif;
 }
 
@@ -57,6 +56,7 @@ body {
 
     margin-top: 50px;
     font-size: 30px;
+    width: 100%;
 }
 
 .header_logo {
@@ -72,11 +72,12 @@ body {
 /* main */
 
 main {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: end;
 
     height: 425px;
-    align-items: flex-end;
 }
 
 /* about */
@@ -85,8 +86,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
-
-    width: 550px;
 }
 
 .about h1 {
@@ -96,6 +95,8 @@ main {
 }
 
 .about h2 {
+    font-size: 1em;
+
     font-weight: bold;
     color: #3da9f0;
     text-transform: uppercase;
@@ -107,38 +108,46 @@ main {
 
 .about p {
     color: #343334;
-    font-size: 0.8em;
-
+    /* font-size: 0.8em; */
 }
 
-.about button {
+.about_button {
     background-color: #3da9f0;
     height: 60px;
     width: 175px;
     border-radius: 10px;
 
     color: white;
-    font-size: 25px;
+    /* font-size: 25px; */
+}
+
+.about_button:hover {
+    opacity: 0.5;
 }
 
 /* picture */
 
 .picture {
     height: 400px;
-    width: 400px;
+    /* width: 400px; */
 }
 
 /* modal */
 
 .modal {
-    width: 1044px;
-    height: 500px;
+    width: 900px;
+    height: 700px;
 
     z-index: 100;
-    top: 100px;
 
     position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     background-image: url(/imgs/layout2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .close {
@@ -147,7 +156,6 @@ main {
 
 .open {
     display: block;
-    /* opacity: 1; */
 }
 
 .button_close {
@@ -159,4 +167,18 @@ main {
     width: 50px;
     display: inline-block;
     content: "\00d7"; /* This will render the 'X' */
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-content: space-between
+    }
+
+    .modal {
+        width: 300px;
+        height: 500px;
+    }
 }
