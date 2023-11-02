@@ -73,7 +73,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr;
     align-items: end;
 
@@ -86,6 +86,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
+
 }
 
 .about h1 {
@@ -98,6 +99,8 @@ main {
     font-size: 1em;
 
     font-weight: bold;
+    text-align: left;
+
     color: #3da9f0;
     text-transform: uppercase;
 }
@@ -108,7 +111,6 @@ main {
 
 .about p {
     color: #343334;
-    /* font-size: 0.8em; */
 }
 
 .about_button {
@@ -118,7 +120,6 @@ main {
     border-radius: 10px;
 
     color: white;
-    /* font-size: 25px; */
 }
 
 .about_button:hover {
@@ -150,11 +151,25 @@ main {
     height: 700px;
 
     position: relative;
+    z-index: 5;
 
     background-image: url(/imgs/layout2.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.overlay {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    opacity: 0.7;
+}
+
 
 .close {
     display: none;
