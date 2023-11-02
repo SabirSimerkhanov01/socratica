@@ -4,4 +4,4 @@
 
 # Техническое задание
 
-[Socratica](https://socratica.vercel.app/)
+### Preview: [Socratica](https://socratica.vercel.app/)
