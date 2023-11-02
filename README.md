@@ -4,4 +4,4 @@
 
 # Техническое задание
 
-https://socratica.vercel.app/
+[link](https://socratica.vercel.app/){:target="_blank"}
